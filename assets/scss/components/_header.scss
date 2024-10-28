@@ -1,0 +1,176 @@
+.navDropDown,
+.searchForm {
+  display: none;
+}
+.headerBar {
+  background-color: #212121;
+  // box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+.header {
+  // background-color: #21212150;
+  // position: fixed;
+  position: absolute;
+  transition: all 500ms ease 0s;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+
+  a {
+    color: #fff;
+    font-size: 13px;
+  }
+  i {
+    font-size: 13px;
+    color: #fff;
+
+  }
+
+  .row {
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+
+    .logo {
+      margin-top: 10px;
+      img {
+        text-align: center;
+        width: 91%;
+        height: auto;
+      }
+    }
+
+    .navBar {
+      margin-left: 20%;
+      // padding: 35px 0;
+      .navList {
+        display: flex;
+        gap: 25px;
+        justify-content: flex-end;
+        align-items: center;
+        letter-spacing: 1px;
+        .navItem {
+          a {
+            i {
+              margin-left: 4px;
+            }
+            &:hover {
+              color: #f39c12;
+            }
+          }
+        }
+      }
+    }
+
+    // User Tools
+    .userTools {
+      margin-left: 30px;
+      .toolList {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .toolItem {
+        }
+        .langSelect {
+          select {
+            text-align: center;
+            appearance: none;
+            cursor: pointer;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            padding: 0 5px;
+            margin: 0;
+            width: 100%;
+            outline: none;
+            display: grid;
+
+            option {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgba(243, 156, 18, 0.4);
+    // background-color: rgba(243, 156, 18, .4);
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    .row {
+      .navBar {
+        margin-left: 10%;
+        .navList {
+          gap: 20px;
+        }
+      }
+
+      // User Tools
+      .userTools {
+        margin-left: 25px;
+        .toolList {
+          gap: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    .row {
+      .navBar {
+        margin-left: 1%;
+        .navList {
+          gap: 5px;
+          i {
+            margin-left: 0;
+          }
+        }
+      }
+
+      // User Tools
+      .userTools {
+        margin-left: 15px;
+        .toolList {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    .row {
+      .navBar {
+        margin-left: 5px;
+        .navList {
+          gap: 5px;
+          i {
+            margin-left: 0;
+          }
+        }
+      }
+
+      // User Tools
+      .userTools {
+        margin-left: 15px;
+        .toolList {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 600px) {
+// }

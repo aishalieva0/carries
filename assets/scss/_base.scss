@@ -2,6 +2,7 @@
   font-family: "Roboto-Regular";
   src: url(../fonts/Roboto-Regular.ttf);
 }
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700');
 
 * {
   margin: 0;
@@ -10,6 +11,10 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 1.5em;
+  // font-weight: 400;
+  color: #687284;
 }
 
 .container {
