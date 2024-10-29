@@ -1,0 +1,26 @@
+@mixin primaryBtn {
+  background-color: #5d6b82;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  height: 38px;
+  margin-top: 15px;
+  padding: 9px 23px;
+  width: 136px;
+
+  &:hover {
+    background-color: #f39c12;
+    transition: 0.5s ease;
+  }
+}
+
+@mixin dashedLine {
+  content: "";
+  border-bottom: 1px dashed;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

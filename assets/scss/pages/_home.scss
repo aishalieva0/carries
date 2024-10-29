@@ -1,3 +1,4 @@
+@import "../mixins";
 .main {
   background-color: #f7f9fc;
   // Hero
@@ -137,27 +138,14 @@
           }
 
           .readMoreBtn {
-            background-color: #5d6b82;
-            border-radius: 5px;
-            color: #fff;
-            display: inline-block;
-            height: 38px;
-            margin-top: 15px;
-            padding: 10px 23px;
-            text-align: center;
-            width: 136px;
-            align-items: center;
-
-            &:hover {
-              background-color: #f39c12;
-              transition: 0.5s ease;
-            }
+            @include primaryBtn;
           }
         }
       }
     }
   }
 
+  // About
   .about {
     margin-top: 30px;
     .row {
@@ -182,9 +170,6 @@
             border: none;
             text-transform: capitalize;
             font-size: 14px;
-          }
-          input[type="number"] {
-            appearance: none;
           }
 
           input::-webkit-outer-spin-button,
@@ -282,7 +267,180 @@
   }
 
   // Service
-  .service{
-    
+  .service {
+    .serviceTitle {
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #3c4a62;
+      }
+    }
+    .serviceTop {
+      display: flex;
+      align-items: center;
+      .learnMoreBtn {
+        @include primaryBtn;
+      }
+
+      .serviceLeft {
+        width: 50%;
+        h2 {
+          font-size: 32px;
+          text-transform: uppercase;
+          color: #3c4a62;
+          margin-bottom: 30px;
+          padding-bottom: 15px;
+          position: relative;
+          &::after {
+            @include dashedLine;
+            color: #f39c12;
+          }
+        }
+      }
+
+      .serviceBg {
+        background: url(../img/home/service-cargo-bg.png) no-repeat center
+          center / contain;
+        width: 99%;
+        height: 450px;
+        position: relative;
+        .serviceRight {
+          background-color: rgba(243, 156, 18, 0.9);
+          padding: 30px;
+          width: 55%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 24px;
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            &::after {
+              @include dashedLine;
+            }
+          }
+          p {
+            color: #fff;
+            margin-bottom: 30px;
+          }
+          .serviceList {
+            .serviceItem {
+              color: #fff;
+              margin-bottom: 15px;
+              i {
+                color: #fff;
+                font-size: 18px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .serviceBottom {
+      .hex {
+        margin-top: 30px;
+        width: 60px;
+        height: 35px;
+        background: #f5f7f9;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          position: absolute;
+        }
+
+        &::before {
+          top: -17px;
+          border-bottom: 17.5px solid #f5f7f9;
+        }
+
+        &::after {
+          bottom: -17px;
+          border-top: 17.5px solid #f5f7f9;
+        }
+
+        .inner {
+          background-color: #5d6b82;
+          transform: scale(0.8, 0.8);
+          z-index: 1;
+
+          &::before {
+            border-bottom: 18px solid #5d6b82;
+          }
+
+          &::after {
+            border-top: 18px solid #5d6b82;
+          }
+        }
+      }
+
+      display: flex;
+      position: relative;
+      height: 100vh;
+
+      .serviceBg {
+        // background-image: url(../img/home/service-area-bg.jpg);
+        // background-size: cover;
+        // // background-position: center center;
+        // background-repeat: no-repeat;
+
+        background: rgba(0, 0, 0, 0) url(../img/home/service-area-bg.jpg) repeat
+          scroll 0 0 / cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &::after {
+          background: #f5f7f9 none repeat;
+          content: "";
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 50%;
+        }
+      }
+      .serviceDetails {
+        z-index: 9;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        padding: 0 30px;
+
+        .singleService {
+          margin: 40px 0;
+          position: relative;
+          margin-left: 50px;
+          .serviceIcon {
+            position: absolute;
+            left: -90px;
+            top: 50%;
+
+            i {
+              position: relative;
+              color: #fff;
+              font-size: 22px;
+            }
+          }
+          h2 {
+            color: #3c4a62;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
+
 }

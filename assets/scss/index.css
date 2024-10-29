@@ -10,7 +10,7 @@
   box-sizing: border-box;
   font-family: "Roboto-Regular";
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 1.7em;
   color: #687284;
 }
 
@@ -21,6 +21,10 @@
 
 .row {
   display: flex;
+}
+
+h2 {
+  line-height: 1.4em;
 }
 
 .navDropDown,
@@ -285,15 +289,14 @@
 }
 .main .blog .row .singleBlog .blogDetails .readMoreBtn {
   background-color: #5d6b82;
-  border-radius: 5px;
   color: #fff;
   display: inline-block;
+  text-align: center;
+  border-radius: 5px;
   height: 38px;
   margin-top: 15px;
-  padding: 10px 23px;
-  text-align: center;
+  padding: 9px 23px;
   width: 136px;
-  align-items: center;
 }
 .main .blog .row .singleBlog .blogDetails .readMoreBtn:hover {
   background-color: #f39c12;
@@ -317,11 +320,6 @@
   border: none;
   text-transform: capitalize;
   font-size: 14px;
-}
-.main .about .row .leftSide .quoteForm input[type=number] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 .main .about .row .leftSide .quoteForm input::-webkit-outer-spin-button,
 .main .about .row .leftSide .quoteForm input::-webkit-inner-spin-button {
@@ -402,4 +400,178 @@
 .main .about .row .rightSide .aboutCount .singleCount .countIcon i {
   color: #f39c12;
   font-size: 24px;
+}
+.main .service .serviceTitle {
+  text-align: center;
+}
+.main .service .serviceTitle h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #3c4a62;
+}
+.main .service .serviceTop {
+  display: flex;
+  align-items: center;
+}
+.main .service .serviceTop .learnMoreBtn {
+  background-color: #5d6b82;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  height: 38px;
+  margin-top: 15px;
+  padding: 9px 23px;
+  width: 136px;
+}
+.main .service .serviceTop .learnMoreBtn:hover {
+  background-color: #f39c12;
+  transition: 0.5s ease;
+}
+.main .service .serviceTop .serviceLeft {
+  width: 50%;
+}
+.main .service .serviceTop .serviceLeft h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #3c4a62;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.main .service .serviceTop .serviceLeft h2::after {
+  content: "";
+  border-bottom: 1px dashed;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #f39c12;
+}
+.main .service .serviceTop .serviceBg {
+  background: url(../img/home/service-cargo-bg.png) no-repeat center center/contain;
+  width: 99%;
+  height: 450px;
+  position: relative;
+}
+.main .service .serviceTop .serviceBg .serviceRight {
+  background-color: rgba(243, 156, 18, 0.9);
+  padding: 30px;
+  width: 55%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .service .serviceTop .serviceBg .serviceRight h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+.main .service .serviceTop .serviceBg .serviceRight h2::after {
+  content: "";
+  border-bottom: 1px dashed;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main .service .serviceTop .serviceBg .serviceRight p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.main .service .serviceTop .serviceBg .serviceRight .serviceList .serviceItem {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.main .service .serviceTop .serviceBg .serviceRight .serviceList .serviceItem i {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.main .service .serviceBottom {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+.main .service .serviceBottom .hex {
+  margin-top: 30px;
+  width: 60px;
+  height: 35px;
+  background: #f5f7f9;
+  position: relative;
+}
+.main .service .serviceBottom .hex::before, .main .service .serviceBottom .hex::after {
+  content: "";
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+}
+.main .service .serviceBottom .hex::before {
+  top: -17px;
+  border-bottom: 17.5px solid #f5f7f9;
+}
+.main .service .serviceBottom .hex::after {
+  bottom: -17px;
+  border-top: 17.5px solid #f5f7f9;
+}
+.main .service .serviceBottom .hex .inner {
+  background-color: #5d6b82;
+  transform: scale(0.8, 0.8);
+  z-index: 1;
+}
+.main .service .serviceBottom .hex .inner::before {
+  border-bottom: 18px solid #5d6b82;
+}
+.main .service .serviceBottom .hex .inner::after {
+  border-top: 18px solid #5d6b82;
+}
+.main .service .serviceBottom .serviceBg {
+  background: rgba(0, 0, 0, 0) url(../img/home/service-area-bg.jpg) repeat scroll 0 0/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main .service .serviceBottom .serviceBg::after {
+  background: #f5f7f9 none repeat;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+.main .service .serviceBottom .serviceDetails {
+  z-index: 9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 0 30px;
+}
+.main .service .serviceBottom .serviceDetails .singleService {
+  margin: 40px 0;
+  position: relative;
+  margin-left: 50px;
+}
+.main .service .serviceBottom .serviceDetails .singleService .serviceIcon {
+  position: absolute;
+  left: -90px;
+  top: 50%;
+}
+.main .service .serviceBottom .serviceDetails .singleService .serviceIcon i {
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+}
+.main .service .serviceBottom .serviceDetails .singleService h2 {
+  color: #3c4a62;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
