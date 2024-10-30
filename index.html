@@ -9,20 +9,23 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/scss/index.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Carries</title>
 </head>
 
 <body>
     <!-- Header start -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row">
                 <!-- Logo -->
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./assets/img/logo.png.webp" alt="logo">
-                    </a>
-                </div>
+                <!-- <div > -->
+                <a href="./index.html" class="logo">
+                    <img src="./assets/img/logo.png.webp" alt="logo">
+                </a>
+                <!-- </div> -->
 
                 <!-- Nav bar -->
                 <nav class="navBar">
@@ -101,9 +104,10 @@
                                 <i class="fa-solid fa-user-large"></i>
                             </a>
                         </li>
-                        <li class="toolItem">
+                        <li class="toolItem searchBtn" id="searchBtn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </li>
+
                         <li class="toolItem">
                             <a href="#">
                                 <i class="fa-solid fa-bag-shopping"></i>
@@ -117,14 +121,16 @@
                             </select>
                         </li>
                     </ul>
-
                     <!-- Search box -->
-                    <form class="searchForm">
-                        <input type="search" name="search" id="search" placeholder="Search.." required>
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
+                    <div class="searchBox" id="searchBox">
+                        <form class="searchForm">
+                            <input type="search" name="search" id="search" placeholder="Search.." required>
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -529,7 +535,7 @@
                         </li>
                         <li class="contactItem">
                             <i class="fa-solid fa-location-dot"></i>
-                            <a href="https://maps.app.goo.gl/rg39iJtH3i2Sv41j6">
+                            <a href="https://maps.app.goo.gl/rg39iJtH3i2Sv41j6" target="_blank">
                                 Gazipur, 1704, Bangladesh. 1215.
                             </a>
                         </li>
@@ -565,31 +571,31 @@
                     <ul class="serviceList">
                         <li class="serviceItem">
                             <i class="fa-regular fa-hand-point-right"></i>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 Support Forums
                             </a>
                         </li>
                         <li class="serviceItem">
                             <i class="fa-regular fa-hand-point-right"></i>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 Communication
                             </a>
                         </li>
                         <li class="serviceItem">
                             <i class="fa-regular fa-hand-point-right"></i>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 FAQS
                             </a>
                         </li>
                         <li class="serviceItem">
                             <i class="fa-regular fa-hand-point-right"></i>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 Privacy Policy
                             </a>
                         </li>
                         <li class="serviceItem">
                             <i class="fa-regular fa-hand-point-right"></i>
-                            <a href="#">
+                            <a href="#" target="_blank">
                                 Rules & Condition
                             </a>
                         </li>
@@ -605,22 +611,22 @@
                 <div class="footerInstaFeed">
                     <h2>Instagram Feed</h2>
                     <div class="footerImgs">
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/1.jpg" alt="instagram">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/2.jpg" alt="instagram">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/3.jpg" alt="instagram">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/4.jpg" alt="instagram">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/5.jpg" alt="instagram">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./assets/img/home/6.jpg" alt="instagram">
                         </a>
                     </div>
@@ -699,6 +705,15 @@
         });
     </script>
 
+    <!-- <script>
+        $(window).on("scroll", function () {
+            $("header").addClass("headerBar");
+        });
+    </script> -->
+
+
+
+    <script src="./assets/js/header.js"></script>
 </body>
 
 </html>
