@@ -8,9 +8,10 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/scss/index.css">
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/scss/index.css">
 
     <title>Carries</title>
 </head>
@@ -136,11 +137,12 @@
         </div>
     </header>
     <!-- Header end -->
+
     <main class="main">
         <!-- Hero start -->
         <section class="hero">
             <!-- Swiper -->
-            <div class="swiper mySwiper owl-carousel">
+            <div class="swiper swiperHero">
                 <div class="swiper-wrapper">
                     <!-- Single slider -->
                     <div class="swiper-slide singleSlider">
@@ -157,10 +159,14 @@
                                 <a href="#" class="heroBtn" class="heroBtn">Get a quote</a>
                             </div>
                         </div>
-                        <div class="sliderBtns">
-                            <div class="swiper-button-next btnNext"></div>
-                            <div class="swiper-button-prev btnPrev"></div>
-                        </div>
+                        <!-- <div class="sliderBtns">
+                            <div class="btnNext">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="btnPrev">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div> -->
                     </div>
                     <!-- Single slider -->
                     <div class="swiper-slide singleSlider">
@@ -177,12 +183,25 @@
                                 <a href="#" class="heroBtn">Get a quote</a>
                             </div>
                         </div>
-                        <div class="sliderBtns">
-                            <div class="swiper-button-next btnNext"></div>
-                            <div class="swiper-button-prev btnPrev"></div>
-                        </div>
+                        <!-- <div class="sliderBtns">
+                            <div class="btnNext">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="btnPrev">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
+                <div class="sliderBtns">
+                    <div class="btnNext">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="btnPrev">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Hero end -->
 
@@ -367,7 +386,10 @@
                     <!-- Single service -->
                     <div class="singleService">
                         <div class="serviceIcon">
-                            <i class="fa fa-dropbox"></i>
+                            <div class="hex">
+                                <div class="hex inner"></div>
+                            </div>
+                            <i class="fa fa-ship"></i>
                         </div>
                         <div class="serviceDesc">
                             <h2>Ware House</h2>
@@ -380,7 +402,10 @@
                     <!-- Single service -->
                     <div class="singleService">
                         <div class="serviceIcon">
-                            <i class="fa fa-truck"></i>
+                            <div class="hex">
+                                <div class="hex inner"></div>
+                            </div>
+                            <i class="fa fa-ship"></i>
                         </div>
                         <div class="serviceDesc">
                             <h2>Road Freight</h2>
@@ -409,7 +434,10 @@
                     <!-- Single service -->
                     <div class="singleService">
                         <div class="serviceIcon">
-                            <i class="fa fa-plane"></i>
+                            <div class="hex">
+                                <div class="hex inner"></div>
+                            </div>
+                            <i class="fa fa-ship"></i>
                         </div>
                         <div class="serviceDesc">
                             <h2>Air Freight</h2>
@@ -491,8 +519,66 @@
 
         <!-- Testimonial start -->
         <section class="testimonial">
-            <div class="container">
+            <div class="contfainer">
+                <h2>what client’s say</h2>
+                <!-- Slider main container -->
+                <div class="swiperTestimonial swiper">
 
+                    <!-- <i class="fa-solid fa-quote-left iconBg"></i>    -->
+                    <div class="swiper-wrapper testimonialDetails">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/img/testimonial/1.jpg" alt="testimonial">
+                            <q>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </q>
+                            <h3>JABIN KANE</h3>
+                            <p>CEO, TOPSMMPANEL.COM</p>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/testimonial/2.jpg" alt="testimonial">
+                            <q>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </q>
+                            <h3>JABIN KANE</h3>
+                            <p>CEO, TOPSMMPANEL.COM</p>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/testimonial/3.jpg" alt="testimonial">
+                            <q>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </q>
+                            <h3>JABIN KANE</h3>
+                            <p>CEO, TOPSMMPANEL.COM</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="testimonialBtns">
+                        <div class="prevBtn">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <div class="nextBtn">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- Testimonial end -->
@@ -682,7 +768,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiperHero', {
             // Optional parameters
             // direction: 'vertical',
             loop: true,
@@ -694,8 +780,8 @@
 
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.btnNext',
+                prevEl: '.btnPrev',
             },
 
             // And if we need scrollbar
@@ -704,7 +790,23 @@
             // },
         });
     </script>
+    <script>
+        const swiperTestimonial = new Swiper('.swiperTestimonial', {
+            loop: true,
 
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.nextBtn',
+                prevEl: '.prevBtn',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
     <!-- <script>
         $(window).on("scroll", function () {
             $("header").addClass("headerBar");
