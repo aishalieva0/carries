@@ -651,6 +651,7 @@ h3 {
   padding: 8px 23px 9px;
   width: 136px;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .main .blog .row .singleBlog .blogDetails .readMoreBtn:hover {
   background-color: #f39c12;
@@ -840,6 +841,7 @@ h3 {
   padding: 8px 23px 9px;
   width: 136px;
   transition: 0.5s ease;
+  cursor: pointer;
   margin-top: 20px;
 }
 .main .service .serviceTop .serviceLeft .learnMoreBtn:hover {
@@ -900,6 +902,7 @@ h3 {
   padding: 8px 23px 9px;
   width: 136px;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .main .service .serviceTop .serviceBg .serviceRight .learnMoreBtn:hover {
   background-color: #f39c12;
@@ -1431,6 +1434,7 @@ h3 {
   padding: 8px 23px 9px;
   width: 136px;
   transition: 0.5s ease;
+  cursor: pointer;
   margin-top: 20px;
 }
 .serviceContent .serviceDetails .serviceLeft .learnMoreBtn:hover {
@@ -1487,6 +1491,112 @@ h3 {
 }
 .serviceContent .serviceDetails .serviceRight .row .singleService:hover .serviceDesc h2,
 .serviceContent .serviceDetails .serviceRight .row .singleService:hover .serviceDesc p {
+  color: #fff;
+}
+
+.contactContent {
+  background: #f7f9fc;
+  padding: 7% 0;
+}
+.contactContent .contactTitle {
+  text-align: center;
+}
+.contactContent .contactTitle h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #3c4a62;
+}
+.contactContent .contactTitle p {
+  margin: 15px 0 40px;
+}
+.contactContent .row {
+  gap: 30px;
+}
+.contactContent .row .contactMessage {
+  width: 65%;
+}
+.contactContent .row .contactMessage .contactForm input {
+  width: 100%;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  margin-bottom: 30px;
+  display: block;
+  color: #555;
+  min-height: 40px;
+  border: 1px solid #ddd;
+  outline: none;
+  box-shadow: inset 0px 0px 2px 0px rgba(169, 164, 163, 0.368627451);
+}
+.contactContent .row .contactMessage .contactForm textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  outline: none;
+  height: 110px;
+  resize: none;
+  box-shadow: inset 0px 0px 2px 0px rgba(169, 164, 163, 0.368627451);
+}
+.contactContent .row .contactMessage .contactForm button {
+  background-color: #5d6b82;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  padding: 8px 23px 9px;
+  width: 136px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.contactContent .row .contactMessage .contactForm button:hover {
+  background-color: #f39c12;
+}
+.contactContent .row .contactInfo {
+  width: 35%;
+}
+.contactContent .row .contactInfo h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #3c4a62;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.contactContent .row .contactInfo .contactAddress {
+  margin-bottom: 20px;
+}
+.contactContent .row .contactInfo .contactAddress .addressList .addressItem {
+  margin-bottom: 10px;
+}
+.contactContent .row .contactInfo .contactAddress .addressList .addressItem:hover a {
+  color: #f39c12;
+}
+.contactContent .row .contactInfo .contactAddress .addressList .addressItem a {
+  transition: 0.5s ease;
+}
+.contactContent .row .contactInfo .contactSocial .socialList {
+  display: flex;
+  gap: 8px;
+}
+.contactContent .row .contactInfo .contactSocial .socialList .socialItem {
+  background: #d7d7d7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s ease;
+}
+.contactContent .row .contactInfo .contactSocial .socialList .socialItem:hover {
+  background-color: #f39c12;
+}
+.contactContent .row .contactInfo .contactSocial .socialList .socialItem i {
   color: #fff;
 }
 

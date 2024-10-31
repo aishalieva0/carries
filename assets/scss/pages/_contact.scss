@@ -1,0 +1,114 @@
+@import "../mixins";
+
+.contactContent {
+  background: #f7f9fc;
+  padding: 7% 0;
+  .contactTitle {
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #3c4a62;
+    }
+    p {
+      margin: 15px 0 40px;
+    }
+  }
+
+  .row {
+    gap: 30px;
+    .contactMessage {
+      width: 65%;
+      .contactForm {
+        // width: 100%;
+        input {
+          width: 100%;
+          text-transform: capitalize;
+          padding: 6px 12px;
+          margin-bottom: 30px;
+          //   height: 34px;
+          display: block;
+          color: #555;
+
+          min-height: 40px;
+          border: 1px solid #ddd;
+          outline: none;
+
+          box-shadow: inset 0px 0px 2px 0px #a9a4a35e;
+        }
+
+        textarea {
+          width: 100%;
+          border: 1px solid #ddd;
+          text-transform: capitalize;
+          padding: 6px 12px;
+          outline: none;
+          height: 110px;
+          resize: none;
+          box-shadow: inset 0px 0px 2px 0px #a9a4a35e;
+        }
+
+        button {
+          @include primaryBtn;
+          border: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .contactInfo {
+      width: 35%;
+      h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #3c4a62;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+      .contactAddress {
+        margin-bottom: 20px;
+        .addressList {
+          .addressItem {
+            margin-bottom: 10px;
+
+            &:hover {
+              a {
+                color: #f39c12;
+              }
+            }
+            a {
+              transition: 0.5s ease;
+            }
+          }
+        }
+      }
+
+      .contactSocial {
+        .socialList {
+          display: flex;
+          gap: 8px;
+          .socialItem {
+            background: #d7d7d7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s ease;
+
+            &:hover {
+              background-color: #f39c12;
+            }
+
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
