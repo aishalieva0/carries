@@ -1,7 +1,7 @@
 @import "../mixins";
 .main {
   // Hero
-  .hero {
+  .heroSlider {
     .swiperHero {
       .singleSlider {
         position: relative;
@@ -644,7 +644,8 @@
 
   // testimonial
   .testimonial {
-    margin: 7% 0;
+    background-color: #f7f9fc;
+    padding: 7% 0;
     text-align: center;
     h2 {
       color: #3c4a62;

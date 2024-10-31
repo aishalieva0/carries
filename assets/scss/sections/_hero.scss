@@ -1,0 +1,46 @@
+.hero {
+  background: url(../img/promo/promo_bottom_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #3c4147;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .heroTitle {
+    z-index: 9;
+    h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .navList,
+    a,
+    h2 {
+      color: #fff;
+    }
+    .pageNav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      a {
+        transition: 0.3s ease;
+        &:hover {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+}

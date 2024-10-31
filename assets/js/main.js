@@ -21,7 +21,26 @@ const swiperTestimonial = new Swiper('.swiperTestimonial', {
     },
 });
 
+new Swiper('.clientSlider', {
+    loop: true,
+    slidesPerView: 6,
 
+    grid: {
+        columns: 6,
+    },
+    mousewheel: {
+        forceToAxis: true,
+    },
+
+    // breakpoints: {
+    //     640: {
+    //         slidesPerView: 2,
+    //     },
+    //     1024: {
+    //         slidesPerView: 9,
+    //     },
+    // },
+});
 
 // $(window).on("scroll", function () {
 //     $("header").addClass("headerBar");
