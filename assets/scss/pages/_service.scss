@@ -1,0 +1,107 @@
+.serviceContent {
+  background: #f7f9fc;
+  padding: 8% 0;
+  .serviceTitle {
+    text-align: center;
+    margin-bottom: 5%;
+    h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #3c4a62;
+      position: relative;
+      @include titleBorder;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .serviceDetails {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .serviceLeft {
+      width: 33%;
+      h2 {
+        font-size: 32px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #3c4a62;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        position: relative;
+        &::after {
+          @include dashedLine;
+          color: #f39c12;
+        }
+      }
+
+      .learnMoreBtn {
+        @include primaryBtn;
+        margin-top: 20px;
+      }
+    }
+
+    .serviceRight {
+      width: 65%;
+      &:nth-child(even) {
+        border-right: 1px solid #ddd;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #ddd;
+      }
+      .row {
+        height: 33%;
+
+        .singleService {
+          display: flex;
+          width: 50%;
+          padding: 33px 10px 33px 0;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          border-top: 1px solid #ddd;
+          border-left: 1px solid #ddd;
+          transition: 0.3s ease;
+          .serviceIcon {
+            height: 100%;
+            i {
+              padding-right: 20px;
+              font-size: 26px;
+              border-right: 1px solid #ddd;
+              color: #f39c12;
+              transition: 0.3s ease;
+            }
+          }
+          .serviceDesc {
+            h2 {
+              font-size: 18px;
+              text-transform: uppercase;
+              color: #3c4a62;
+              margin-bottom: 10px;
+              transition: 0.3s ease;
+            }
+            p {
+              transition: 0.3s ease;
+            }
+          }
+
+          &:hover {
+            background: #f39c12;
+            .serviceIcon {
+              i {
+                color: #fff;
+              }
+            }
+            .serviceDesc {
+              h2,
+              p {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

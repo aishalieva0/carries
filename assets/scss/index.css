@@ -1356,6 +1356,140 @@ h3 {
 .client {
   padding: 8% 0;
 }
+
+.serviceContent {
+  background: #f7f9fc;
+  padding: 8% 0;
+}
+.serviceContent .serviceTitle {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.serviceContent .serviceTitle h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #3c4a62;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.serviceContent .serviceTitle h2::before {
+  background: url(../img/title-border.png) repeat;
+  content: "";
+  width: 100px;
+  height: 2px;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.serviceContent .serviceTitle h2::after {
+  content: "";
+  background: #f39c12 repeat;
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.serviceContent .serviceDetails {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.serviceContent .serviceDetails .serviceLeft {
+  width: 33%;
+}
+.serviceContent .serviceDetails .serviceLeft h2 {
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3c4a62;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.serviceContent .serviceDetails .serviceLeft h2::after {
+  content: "";
+  border-bottom: 1px dashed;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #f39c12;
+}
+.serviceContent .serviceDetails .serviceLeft .learnMoreBtn {
+  background-color: #5d6b82;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  padding: 8px 23px 9px;
+  width: 136px;
+  transition: 0.5s ease;
+  margin-top: 20px;
+}
+.serviceContent .serviceDetails .serviceLeft .learnMoreBtn:hover {
+  background-color: #f39c12;
+}
+.serviceContent .serviceDetails .serviceRight {
+  width: 65%;
+}
+.serviceContent .serviceDetails .serviceRight:nth-child(even) {
+  border-right: 1px solid #ddd;
+}
+.serviceContent .serviceDetails .serviceRight:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.serviceContent .serviceDetails .serviceRight .row {
+  height: 33%;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService {
+  display: flex;
+  width: 50%;
+  padding: 33px 10px 33px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService .serviceIcon {
+  height: 100%;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService .serviceIcon i {
+  padding-right: 20px;
+  font-size: 26px;
+  border-right: 1px solid #ddd;
+  color: #f39c12;
+  transition: 0.3s ease;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService .serviceDesc h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #3c4a62;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService .serviceDesc p {
+  transition: 0.3s ease;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService:hover {
+  background: #f39c12;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService:hover .serviceIcon i {
+  color: #fff;
+}
+.serviceContent .serviceDetails .serviceRight .row .singleService:hover .serviceDesc h2,
+.serviceContent .serviceDetails .serviceRight .row .singleService:hover .serviceDesc p {
+  color: #fff;
+}
+
 .hero {
   background: url(../img/promo/promo_bottom_bg.jpg);
   background-size: cover;
