@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Style -->
     <link rel="stylesheet" href="./assets/scss/index.css">
     <title>Carries</title>
@@ -156,14 +160,6 @@
                                 <a href="#" class="heroBtn" class="heroBtn">Get a quote</a>
                             </div>
                         </div>
-                        <!-- <div class="sliderBtns">
-                            <div class="btnNext">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </div>
-                            <div class="btnPrev">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </div> -->
                     </div>
                     <!-- Single slider -->
                     <div class="swiper-slide singleSlider">
@@ -180,14 +176,6 @@
                                 <a href="#" class="heroBtn">Get a quote</a>
                             </div>
                         </div>
-                        <!-- <div class="sliderBtns">
-                            <div class="btnNext">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </div>
-                            <div class="btnPrev">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="sliderBtns">
@@ -203,7 +191,7 @@
         <!-- Hero end -->
 
         <!-- Blog start -->
-        <section class="blog">
+        <section class="blog" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="row">
                     <!-- Single blog -->
@@ -265,7 +253,7 @@
         <!-- Blog end -->
 
         <!-- About start -->
-        <section class="about">
+        <section class="about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="row">
                     <div class="leftSide">
@@ -328,7 +316,7 @@
         <!-- About end -->
 
         <!-- Service start -->
-        <section class="service">
+        <section class="service" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <div class="serviceTitle">
                     <h2>Our Service</h2>
@@ -449,7 +437,7 @@
         <!-- Service end -->
 
         <!-- Promo start -->
-        <section class="promo">
+        <section class="promo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="container">
                 <!-- Promo top area -->
                 <div class="promoTop">
@@ -515,7 +503,7 @@
         <!-- Promo end -->
 
         <!-- Testimonial start -->
-        <section class="testimonial">
+        <section class="testimonial" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="contfainer">
                 <h2>what client’s say</h2>
                 <!-- Slider main container -->
@@ -764,8 +752,14 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- AOS animation -->
+
     <!-- including js file -->
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,9 @@ btn.addEventListener("click", function () {
 
 const swiper = new Swiper('.swiperHero', {
     loop: true,
+    autoplay: true,
+    effect: "fade",
+    speed: 1500,
     navigation: {
         nextEl: '.btnNext',
         prevEl: '.btnPrev',
@@ -45,3 +48,4 @@ new Swiper('.clientSlider', {
 // $(window).on("scroll", function () {
 //     $("header").addClass("headerBar");
 // });
+

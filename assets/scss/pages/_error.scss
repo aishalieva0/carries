@@ -1,0 +1,23 @@
+@import "../mixins";
+.error {
+//   height: 90vh;
+  padding: 8% 0;
+  text-align: center;
+  p {
+    font-size: 24px;
+    color: #3c4a62;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 25px 0 15px;
+  }
+  h2 {
+    font-size: 36px;
+    color: #3c4a62;
+    margin-bottom: 20px;
+
+  }
+  a {
+    @include primaryBtn;
+    padding: 8px 20px 9px;
+  }
+}
