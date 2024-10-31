@@ -341,7 +341,7 @@
       }
 
       .serviceBg {
-        background: url(../img/home/service-cargo-bg.png) no-repeat center
+        background: url(../img/service/service-cargo-bg.png) no-repeat center
           center / contain;
         width: 99%;
         height: 450px;
@@ -393,7 +393,7 @@
       position: relative;
       height: 130vh;
       .serviceBg {
-        background: url(../img/home/service-area-bg.jpg) repeat 0 0 / cover;
+        background: url(../img/service/service-area-bg.jpg) repeat 0 0 / cover;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -541,7 +541,7 @@
     .promoTop {
       padding: 75px 0;
       // margin: 7% 0 9%;
-      background: url(../img/home/promo_top_bg.png) no-repeat right -5% bottom 50% /
+      background: url(../img/promo/promo_top_bg.png) no-repeat right -5% bottom 50% /
         46% auto;
       width: 100%;
       display: flex;
@@ -585,7 +585,7 @@
       position: relative;
       padding: 120px 0 200px;
       .promoBg {
-        background: rgba(0, 0, 0, 0) url(../img/home/promo_bottom_bg.jpg)
+        background: rgba(0, 0, 0, 0) url(../img/promo/promo_bottom_bg.jpg)
           no-repeat scroll center center / cover;
         height: 100%;
         left: 0;
