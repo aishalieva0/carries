@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiperHero', {
     loop: true,
     autoplay: true,
     effect: "fade",
-    speed: 1500,
+    speed: 1200,
     navigation: {
         nextEl: '.btnNext',
         prevEl: '.btnPrev',
@@ -18,6 +18,7 @@ const swiper = new Swiper('.swiperHero', {
 
 const swiperTestimonial = new Swiper('.swiperTestimonial', {
     loop: true,
+    speed: 2000,
     navigation: {
         nextEl: '.nextBtn',
         prevEl: '.prevBtn',
@@ -26,6 +27,8 @@ const swiperTestimonial = new Swiper('.swiperTestimonial', {
 
 new Swiper('.clientSlider', {
     loop: true,
+    autoplay: true,
+    speed: 1500,
     slidesPerView: 6,
 
     grid: {
@@ -49,3 +52,4 @@ new Swiper('.clientSlider', {
 //     $("header").addClass("headerBar");
 // });
 
+AOS.init();

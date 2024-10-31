@@ -453,6 +453,10 @@ h3 {
 .footer .footerMain .footerInstaFeed .footerImgs img {
   max-width: 100%;
   height: auto;
+  transition: 0.3s ease;
+}
+.footer .footerMain .footerInstaFeed .footerImgs img:hover {
+  transform: scale(1.1);
 }
 .footer .footerBottom {
   padding: 30px 0;
@@ -541,7 +545,7 @@ h3 {
   border-radius: 3px;
   padding: 12px 30px;
   margin-left: 20px;
-  transition: 0s ease;
+  transition: 0.5s ease;
 }
 .main .heroSlider .swiperHero .singleSlider .heroDesc .heroBtnGroup .heroBtn:hover {
   background-color: #f39c12;
@@ -1157,6 +1161,9 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
 }
+.main .testimonial .swiperTestimonial {
+  cursor: pointer;
+}
 .main .testimonial .swiperTestimonial .testimonialDetails {
   position: relative;
 }
@@ -1312,11 +1319,21 @@ h3 {
   color: #5d6b82;
   padding: 10px 20px;
   display: block;
+  transition: 0.5s ease;
 }
 .aboutDetails .navigation .navList .listItem .active {
   background: #f39c12;
   border-color: #f39c12;
   color: #fff;
+}
+.aboutDetails .navigation .navList .listItem .active:hover {
+  border-color: #f39c12;
+  color: #f39c12;
+  background-color: #fff;
+}
+.aboutDetails .navigation .navList .listItem:hover a {
+  border-color: #f39c12;
+  color: #f39c12;
 }
 .aboutDetails .aboutContent {
   margin: 5% 0;
@@ -1357,6 +1374,7 @@ h3 {
 }
 
 .client {
+  cursor: pointer;
   padding: 8% 0;
 }
 
@@ -1592,12 +1610,17 @@ h3 {
   width: 40px;
   height: 40px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .contactContent .row .contactInfo .contactSocial .socialList .socialItem:hover {
   background-color: #f39c12;
 }
 .contactContent .row .contactInfo .contactSocial .socialList .socialItem i {
   color: #fff;
+}
+
+.map {
+  margin-bottom: -8px;
 }
 
 .error {

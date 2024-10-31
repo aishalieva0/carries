@@ -4,19 +4,6 @@
   background: #5d6b82;
   z-index: 9;
 
-  //   &::after {
-  //   background: rgba(0, 0, 0, 0) url("../img/footer-map-bg.png") no-repeat
-  //     scroll center center / 43% auto;
-  //     content: "";
-  //     height: 100%;
-  //     left: 0;
-  //     opacity: 0.1;
-  //     position: absolute;
-  //     top: 0;
-  //     width: 100%;
-  //     z-index: 1;
-  //   }
-
   .footerBg {
     background-image: url(../img/footer-map-bg.png);
     background-size: 90% auto;
@@ -33,7 +20,6 @@
   // newsletter
   .footerNewsletter {
     display: flex;
-    // justify-content: space-between;
     padding: 6% 0;
     align-items: center;
 
@@ -53,7 +39,6 @@
       display: flex;
       justify-content: flex-end;
       width: 50%;
-      //   height: auto;
       align-items: baseline;
 
       input {
@@ -71,7 +56,6 @@
         display: inline-block;
         text-align: center;
         border-radius: 5px;
-        // height: 38px;
         margin-top: 15px;
         padding: 16px 23px;
         width: 30%;
@@ -111,7 +95,6 @@
       letter-spacing: 1px;
       margin-bottom: 40px;
       padding-bottom: 20px;
-      //   font-weight: 500;
       text-transform: capitalize;
       line-height: 1.4em;
       color: #fff;
@@ -146,7 +129,6 @@
             font-size: 12px;
             &::after {
               content: "";
-              // border: 1px solid #a1a7b2;
               display: block;
               width: 1px;
               height: 15px;
@@ -222,18 +204,19 @@
     .footerInstaFeed {
       width: 24%;
 
-      //    max-width: 100%;
-      //    height: auto;
-
       .footerImgs {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         gap: 5px 10px;
-
+        
         img {
           max-width: 100%;
           height: auto;
+          transition: .3s ease;
+          &:hover{
+            transform: scale(1.1);
+          }
         }
       }
     }
@@ -241,7 +224,6 @@
 
   //bottom
   .footerBottom {
-    // padding: 30px 0;
     padding: 30px 0;
     display: flex;
     justify-content: space-between;

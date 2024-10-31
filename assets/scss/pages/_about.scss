@@ -30,11 +30,24 @@
           color: #5d6b82;
           padding: 10px 20px;
           display: block;
+          transition: 0.5s ease;
         }
         .active {
           background: #f39c12;
           border-color: #f39c12;
           color: #fff;
+          &:hover {
+            border-color: #f39c12;
+            color: #f39c12;
+            background-color: #fff;
+          }
+        }
+
+        &:hover {
+          a {
+            border-color: #f39c12;
+            color: #f39c12;
+          }
         }
       }
     }
@@ -83,5 +96,6 @@
 }
 
 .client {
+  cursor: pointer;
   padding: 8% 0;
 }

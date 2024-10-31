@@ -98,7 +98,7 @@
             width: 40px;
             height: 40px;
             transition: 0.3s ease;
-
+            cursor: pointer;
             &:hover {
               background-color: #f39c12;
             }
@@ -111,4 +111,8 @@
       }
     }
   }
+}
+
+.map {
+  margin-bottom: -8px;
 }

@@ -59,7 +59,7 @@
               border-radius: 3px;
               padding: 12px 30px;
               margin-left: 20px;
-              transition: 0s ease;
+              transition: 0.5s ease;
 
               &:hover {
                 background-color: #f39c12;
@@ -662,6 +662,8 @@
       @include titleBorder;
     }
     .swiperTestimonial {
+      cursor: pointer;
+
       .testimonialDetails {
         position: relative;
 
