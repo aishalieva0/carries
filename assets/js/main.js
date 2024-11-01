@@ -38,18 +38,40 @@ new Swiper('.clientSlider', {
         forceToAxis: true,
     },
 
-    // breakpoints: {
-    //     640: {
-    //         slidesPerView: 2,
-    //     },
-    //     1024: {
-    //         slidesPerView: 9,
-    //     },
-    // },
+    breakpoints: {
+
+        1024: {
+            slidesPerView: 6,
+        },
+
+        800: {
+            slidesPerView: 5,
+        },
+
+        680: {
+            slidesPerView: 4,
+        },
+
+        500: {
+            slidesPerView: 3,
+        },
+        380: {
+            slidesPerView: 2,
+        },
+
+
+        280: {
+            slidesPerView: 1,
+        },
+    },
 });
 
 // $(window).on("scroll", function () {
 //     $("header").addClass("headerBar");
 // });
+
+window.addEventListener('load', () => {
+    document.body.classList.remove('preload');
+});
 
 AOS.init();

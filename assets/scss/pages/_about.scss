@@ -99,3 +99,28 @@
   cursor: pointer;
   padding: 8% 0;
 }
+
+@media (max-width: 850px) {
+  .aboutDetails {
+    .navigation {
+      .navList {
+        flex-direction: column;
+      }
+    }
+
+    .aboutContent {
+      .row:nth-child(even) {
+        flex-direction: column-reverse;
+      }
+      .row {
+        flex-direction: column;
+        .aboutDesc {
+          width: 100%;
+        }
+        .contentImg {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

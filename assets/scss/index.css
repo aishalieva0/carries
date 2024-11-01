@@ -1593,6 +1593,10 @@ h3 {
     font-size: 26px !important;
   }
 }
+.preload .dropdown {
+  transition: none;
+}
+
 .aboutDetails {
   margin: 7% 0;
 }
@@ -1703,6 +1707,23 @@ h3 {
   padding: 8% 0;
 }
 
+@media (max-width: 850px) {
+  .aboutDetails .navigation .navList {
+    flex-direction: column;
+  }
+  .aboutDetails .aboutContent .row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .aboutDetails .aboutContent .row {
+    flex-direction: column;
+  }
+  .aboutDetails .aboutContent .row .aboutDesc {
+    width: 100%;
+  }
+  .aboutDetails .aboutContent .row .contentImg {
+    width: 100%;
+  }
+}
 .serviceContent {
   background: #f7f9fc;
   padding: 8% 0;
