@@ -105,3 +105,24 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .serviceDetails {
+    display: flex;
+    flex-direction: column;
+    .serviceLeft {
+      width: 100%;
+    }
+
+    .serviceRight {
+      width: 100%;
+      .row {
+        flex-direction: column;
+
+        .singleService {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

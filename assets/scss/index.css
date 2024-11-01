@@ -1858,6 +1858,24 @@ h3 {
   color: #fff;
 }
 
+@media (max-width: 900px) {
+  .serviceDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviceDetails .serviceLeft {
+    width: 100%;
+  }
+  .serviceDetails .serviceRight {
+    width: 100%;
+  }
+  .serviceDetails .serviceRight .row {
+    flex-direction: column;
+  }
+  .serviceDetails .serviceRight .row .singleService {
+    width: 100%;
+  }
+}
 .contactContent {
   background: #f7f9fc;
   padding: 7% 0;
