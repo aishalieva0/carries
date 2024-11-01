@@ -1116,6 +1116,7 @@ h3 {
 .main .service .serviceBottom {
   position: relative;
   height: 130vh;
+  overflow: hidden;
 }
 .main .service .serviceBottom .serviceBg {
   background: url(../img/service/service-area-bg.jpg) repeat 0 0/cover;
@@ -1273,7 +1274,7 @@ h3 {
   padding: 120px 0 200px;
 }
 .main .promo .promoBottom .promoBg {
-  background: rgba(0, 0, 0, 0) url(../img/promo/promo_bottom_bg.jpg) no-repeat scroll center center/cover;
+  background: url(../img/promo/promo_bottom_bg.jpg) no-repeat scroll center center/cover;
   height: 100%;
   left: 0;
   position: absolute;
@@ -1397,6 +1398,7 @@ h3 {
   width: 60px;
   margin-top: 30px;
   font-style: normal;
+  z-index: -1;
 }
 .main .testimonial .swiperTestimonial .testimonialDetails h3 {
   font-size: 24px;
@@ -1466,6 +1468,131 @@ h3 {
   }
 }
 
+@media (max-width: 1024px) {
+  .heroSlider .heroDesc h2 {
+    font-size: 30px !important;
+  }
+  .heroSlider .heroDesc p {
+    font-size: 12px !important;
+  }
+  .heroSlider .heroDesc a {
+    font-size: 12px !important;
+  }
+  .heroSlider .sliderBtns {
+    transform: translateY(180px) !important;
+  }
+  .blog .row {
+    flex-direction: column;
+  }
+  .blog .row .singleBlog {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .about .row {
+    flex-direction: column;
+  }
+  .about .row .leftSide {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .about .row .rightSide {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .service .serviceTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .service .serviceTop h2 {
+    font-size: 26px !important;
+  }
+  .service .serviceTop p {
+    font-size: 12px;
+  }
+  .service .serviceTop .serviceLeft {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .service .serviceTop .serviceRight {
+    width: 100% !important;
+    line-height: 30px;
+  }
+  .service .serviceBottom .singleService .serviceDesc {
+    font-size: 16px;
+  }
+  .promo .promoTop {
+    background: none !important;
+    justify-content: space-between;
+  }
+  .promo .promoTop .promoColumn {
+    width: 50% !important;
+  }
+}
+@media (max-width: 600px) {
+  .heroSlider .heroDesc {
+    transform: translate(14%, -120%) !important;
+  }
+  .heroSlider .heroDesc h2 {
+    font-size: 18px !important;
+  }
+  .heroSlider .heroDesc .heroBtnGroup {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heroSlider .heroDesc .heroBtnGroup .heroBtn {
+    margin-top: 10px;
+  }
+  .about .rightSide h2 {
+    font-size: 24px !important;
+  }
+  .about .rightSide .aboutCount {
+    padding: 30px 5px !important;
+  }
+  .about .rightSide .aboutCount i {
+    font-size: 20px;
+  }
+  .about .rightSide .aboutCount .singleCount {
+    text-align: center;
+  }
+  .about .rightSide .aboutCount .singleCount .countIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service .serviceTitle h2 {
+    font-size: 28px !important;
+  }
+  .service .serviceTop h2 {
+    font-size: 22px !important;
+  }
+  .service .serviceTop .serviceBg {
+    margin-bottom: 70px;
+  }
+  .service .serviceTop .serviceBg .serviceRight {
+    padding: 15px 10px !important;
+  }
+  .service .serviceBottom .serviceBg {
+    display: none;
+  }
+  .promo .promoTop {
+    flex-direction: column;
+    text-align: center;
+  }
+  .promo .promoTop .promoColumn {
+    width: 100% !important;
+  }
+  .promo .promoTop .promoColumn h3 {
+    font-size: 18px !important;
+  }
+  .promo .promoBottom .promoDesc {
+    top: 80px;
+  }
+  .testimonial h2 {
+    font-size: 26px !important;
+  }
+}
 .aboutDetails {
   margin: 7% 0;
 }
