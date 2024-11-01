@@ -57,16 +57,16 @@
         text-align: center;
         border-radius: 5px;
         margin-top: 15px;
-        padding: 16px 23px;
-        width: 30%;
+        width: 140px;
+        height: 56px;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
         border: none;
+        transition: 0.5s ease;
         &:hover {
           background-color: #fff;
           color: #f39c12;
-          transition: 0.5s ease;
         }
       }
     }
@@ -209,12 +209,12 @@
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         gap: 5px 10px;
-        
+
         img {
           max-width: 100%;
           height: auto;
-          transition: .3s ease;
-          &:hover{
+          transition: 0.3s ease;
+          &:hover {
             transform: scale(1.1);
           }
         }
@@ -231,6 +231,14 @@
     .bottomText {
       p {
         color: #fff;
+        span {
+          cursor: pointer !important;
+          transition: 0.3s ease;
+          color: #fff;
+          &:hover {
+            color: #f39c12;
+          }
+        }
       }
     }
 
@@ -259,6 +267,84 @@
             background-color: #f39c12;
             transition: 0.5s;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .footer {
+    .container {
+      width: 75%;
+      // newsletter
+      .footerNewsletter {
+        display: flex;
+        flex-direction: column;
+        .newsletterDesc {
+          width: 100%;
+
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .newsletterForm {
+          width: 100%;
+          justify-content: space-between;
+          input {
+            font-size: 12px;
+            width: 70%;
+            height: 46px;
+          }
+
+          button {
+            height: 46px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      //main
+      .footerMain {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 16px;
+          margin: 20px 0 30px;
+        }
+        p {
+          font-size: 13px;
+        }
+
+        // about
+        .footerAbout {
+          width: 100%;
+        }
+
+        //tweet
+        .footerTweets {
+          width: 100%;
+        }
+
+        //service
+        .footerService {
+          width: 100%;
+        }
+        //instaFeed
+        .footerInstaFeed {
+          width: 100%;
+        }
+      }
+
+      //bottom
+      .footerBottom {
+        flex-direction: column;
+        .bottomText {
+          p {
+            text-align: center;
+            font-size: 13px;
+          }
+          margin-bottom: 15px;
         }
       }
     }

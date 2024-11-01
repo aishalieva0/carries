@@ -459,17 +459,17 @@ h3 {
   text-align: center;
   border-radius: 5px;
   margin-top: 15px;
-  padding: 16px 23px;
-  width: 30%;
+  width: 140px;
+  height: 56px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   border: none;
+  transition: 0.5s ease;
 }
 .footer .footerNewsletter .newsletterForm button:hover {
   background-color: #fff;
   color: #f39c12;
-  transition: 0.5s ease;
 }
 .footer .footerBorder {
   background: rgba(0, 0, 0, 0) url(../img/footer-border.png) repeat-x scroll center center;
@@ -596,6 +596,14 @@ h3 {
 .footer .footerBottom .bottomText p {
   color: #fff;
 }
+.footer .footerBottom .bottomText p span {
+  cursor: pointer !important;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.footer .footerBottom .bottomText p span:hover {
+  color: #f39c12;
+}
 .footer .footerBottom .footerSocials .socialList {
   display: flex;
   gap: 9px;
@@ -620,6 +628,67 @@ h3 {
   transition: 0.5s;
 }
 
+@media (max-width: 990px) {
+  .footer .container {
+    width: 75%;
+  }
+  .footer .container .footerNewsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .container .footerNewsletter .newsletterDesc {
+    width: 100%;
+  }
+  .footer .container .footerNewsletter .newsletterDesc h2 {
+    font-size: 30px;
+  }
+  .footer .container .footerNewsletter .newsletterForm {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer .container .footerNewsletter .newsletterForm input {
+    font-size: 12px;
+    width: 70%;
+    height: 46px;
+  }
+  .footer .container .footerNewsletter .newsletterForm button {
+    height: 46px;
+    font-size: 12px;
+  }
+  .footer .container .footerMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .container .footerMain h2 {
+    font-size: 16px;
+    margin: 20px 0 30px;
+  }
+  .footer .container .footerMain p {
+    font-size: 13px;
+  }
+  .footer .container .footerMain .footerAbout {
+    width: 100%;
+  }
+  .footer .container .footerMain .footerTweets {
+    width: 100%;
+  }
+  .footer .container .footerMain .footerService {
+    width: 100%;
+  }
+  .footer .container .footerMain .footerInstaFeed {
+    width: 100%;
+  }
+  .footer .container .footerBottom {
+    flex-direction: column;
+  }
+  .footer .container .footerBottom .bottomText {
+    margin-bottom: 15px;
+  }
+  .footer .container .footerBottom .bottomText p {
+    text-align: center;
+    font-size: 13px;
+  }
+}
 .main .heroSlider .swiperHero .singleSlider {
   position: relative;
 }
